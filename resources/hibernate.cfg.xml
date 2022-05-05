@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hebrnate Configuration DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		
+		<!-- подключение БД: адрес:порт/имя БД -->
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Hibernate</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">admin</property>
+		<property name="dialect">org.hibernate.dialect.PostgreSQL95Dialect</property>
+		
+		<!-- чтобы запросы выводились в консоль -->
+		<property name="show_sql">true</property>
+	</session-factory>
+</hibernate-configuration>
